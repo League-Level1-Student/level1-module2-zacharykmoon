@@ -15,9 +15,13 @@ package _02_smurf;
 public class Smurf {
 
 	private String name;
-
-	Smurf(String name) {
+	private String HatColor;
+    Smurf(String HatColor){
+    	
+    }
+	Smurf(String name, String HatColor) {
 		this.name = name;
+		this.HatColor = HatColor;
 	}
 
 	public String getName() {
