@@ -16,16 +16,20 @@ public class Smurf {
 
 	private String name;
 	private String HatColor;
+	private String GirlorBoy;
     Smurf(String HatColor){
     	
     }
-	Smurf(String name, String HatColor) {
+	Smurf(String name, String HatColor, String GirlorBoy  ) {
 		this.name = name;
 		this.HatColor = HatColor;
+		this.GirlorBoy = GirlorBoy;
+		System.out.println("here");
 	}
 
 	public String getName() {
-		return "My name is " + name + " Smurf.";
+		System.out.println("here2");
+		return "My name is " + this.name + " Smurf.";
 	}
 
 	public void eat() {
@@ -35,13 +39,13 @@ public class Smurf {
 	// Papa Smurf wears a red hat, all the others are white.
 	public String getHatColor() {
 		// 3. Fill in this method
-		return "";
+		return "My  hat  color is" + HatColor;
 	}
 
 	// Smurfette is the only female Smurf.
 	public String isGirlOrBoy() {
 		// 4. Fill in this method
-		return "";
+		return "My smurf is a "+ GirlorBoy + "named Smurfeete";
 	}
 
 }
